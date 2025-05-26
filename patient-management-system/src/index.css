@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "DM Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-gray-950 text-white;
+}
+
+.secondary-text {
+  @apply text-slate-300;
+}
+
+.custom-shadow {
+  box-shadow: rgba(30, 30, 31, 0.2) 0px 8px 24px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-green-600;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-950;
+}
